@@ -9,8 +9,16 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>b4v5azffc8hd</unique-id>
     <saved-with-version>23900</saved-with-version>
-    <used-plugins />
-    <used-behaviors />
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Rex.Rainbow" id="rex_youtube_player" version="0.100000001">Youtube player</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -37,7 +45,101 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="youtube" sid="760955041941354">
+            <plugin id="rex_youtube_player" />
+        </object-type>
+        <object-type name="StopClicks" sid="570809724804659">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306715238549925" speed="5">
+                    <frame duration="1" hotspotX="3.57143" hotspotY="5.44444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="292185372758342">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Browser" sid="495929204848409">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Sprite" sid="113247654191781">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="498878377083998">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228238040387889" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MousePos" sid="582906760129087">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="KettleMask" sid="549624436595781">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717791865964139" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MoveLeft" sid="678358815533248">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453133636826769" speed="5">
+                    <frame duration="1" hotspotX="0.615764" hotspotY="0.612745" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MoveRight" sid="948248282554730">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879446780686416" speed="5">
+                    <frame duration="1" hotspotX="0.384236" hotspotY="0.612745">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tap" sid="786818421776918">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="679856520307370" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InventoryKettle" sid="787080912713168">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="663268985189519">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522997140169738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="KettleButtonMask" sid="732900494960042">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="723760191336095" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
@@ -45,7 +147,10 @@
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Mouse" uid="2" />
+        <global-instance type="Browser" uid="3" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
