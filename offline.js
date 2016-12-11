@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1481489741,
+	"version": 1481492192,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -20,6 +20,7 @@
 		"images/spooninventory-sheet0.png",
 		"images/noteinventory-sheet0.png",
 		"images/notebg-sheet0.png",
+		"images/twitter_logo_blue-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
