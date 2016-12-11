@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>383.067</position-x>
-        <position-y>203.414</position-y>
+        <position-y>265.914</position-y>
         <position-z>100</position-z>
         <lookat-x>383.067</lookat-x>
-        <lookat-y>203.414</lookat-y>
+        <lookat-y>265.914</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,12 +23,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="workSurface" />
+    <active-layer name="items" />
     <layers>
         <layer locked="1" name="youtubeLayer" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="stopPropagation" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="workSurface" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="items" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="kitchensink" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="workSurface" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="items" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="kitchensink" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="NoteLayer" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

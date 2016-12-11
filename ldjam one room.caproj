@@ -21,6 +21,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -127,6 +128,9 @@
                 <behavior-type name="DragDrop" sid="663268985189519">
                     <behavior id="DragnDrop" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="315540151507339">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522997140169738" speed="5">
@@ -192,6 +196,75 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="689419050326497" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CupOnTable" sid="507647181940876">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="377909459434088" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fridge" sid="339999004448988">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="756078167349920" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InventoryMilk" sid="937489768896157">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="476648174643045">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="677686974562783" speed="5">
+                    <frame duration="1" hotspotX="0.764706" hotspotY="0.479167" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpoonCupboard" sid="366937529905559">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663187908377335" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpoonInventory" sid="940813366383967">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="389165732257993">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="165231502344076" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NoteInventory" sid="866361450881971">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801189935000174" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NoteText" sid="369906922993275">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="NoteBg" sid="279169897741832">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="997875902899955" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
