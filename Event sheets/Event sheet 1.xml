@@ -3,8 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <variable constant="0" name="KettleIsBoiled" sid="122767183339583" static="0" type="number">1</variable>
-        <variable constant="0" name="KettleIsFilled" sid="209354995408041" static="0" type="number">1</variable>
+        <variable constant="0" name="IsKettleBoiling" sid="453254913808609" static="0" type="number">0</variable>
+        <variable constant="0" name="KettleIsBoiled" sid="122767183339583" static="0" type="number">0</variable>
+        <variable constant="0" name="KettleIsFilled" sid="209354995408041" static="0" type="number">0</variable>
         <variable constant="0" name="TapIsOn" sid="560766061136328" static="0" type="number">0</variable>
         <variable constant="0" name="SetVideoAtAfterPause" sid="738658618845108" static="0" type="number">-1</variable>
         <variable constant="0" name="IsFacingSink" sid="260933873578478" static="0" type="number">0</variable>
@@ -70,7 +71,7 @@
                     </conditions>
                     <actions>
                         <action id="1" name="Set playback time" sid="895712495186754" type="youtube">
-                            <param id="0" name="Time">0</param>
+                            <param id="0" name="Time">3</param>
                         </action>
                         <action id="-9" name="Set value" sid="308226866597990" type="System">
                             <param id="0" name="Variable">PauseVideoAt</param>
@@ -315,7 +316,7 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="992953708536826" type="System">
                                     <param id="0" name="Variable">PauseVideoAt</param>
-                                    <param id="1" name="Value">63</param>
+                                    <param id="1" name="Value">64</param>
                                 </action>
                                 <action id="6" name="Play" sid="379553118543789" type="youtube" />
                                 <action id="-9" name="Set value" sid="204872773720807" type="System">
@@ -468,46 +469,35 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="328049958788176">
+        <event-block sid="885380291832158">
             <conditions>
-                <condition id="6" name="On object clicked" sid="426413091338235" type="Mouse">
+                <condition id="6" name="On object clicked" sid="342635388580724" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">KettleMask</param>
+                    <param id="2" name="Object clicked">TeaCupboardMask</param>
                 </condition>
-                <condition id="-14" name="Compare variable" sid="752001275820666" type="System">
-                    <param id="0" name="Variable">HasKettle</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="562940502993220" type="System">
+                <condition id="-14" name="Compare variable" sid="984057992625044" type="System">
                     <param id="0" name="Variable">IsFacingSink</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
-                <condition id="-14" name="Compare variable" sid="888580815770601" type="System">
-                    <param id="0" name="Variable">KettleIsFilled</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="888281524780599" type="System">
-                    <param id="0" name="Variable">KettleIsBoiled</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="404319599568517" type="InventoryTeabag" />
             </conditions>
             <actions>
-                <action id="1" name="Set playback time" sid="510988155242041" type="youtube">
-                    <param id="0" name="Time">60*1+8</param>
+                <action id="1" name="Set playback time" sid="428575580559450" type="youtube">
+                    <param id="0" name="Time">1*60+33</param>
                 </action>
-                <action id="-9" name="Set value" sid="318896356219155" type="System">
+                <action id="-9" name="Set value" sid="235613914813210" type="System">
                     <param id="0" name="Variable">PauseVideoAt</param>
-                    <param id="1" name="Value">60*1+14</param>
+                    <param id="1" name="Value">60+49</param>
                 </action>
-                <action id="6" name="Play" sid="482606257838756" type="youtube" />
-                <action id="-9" name="Set value" sid="103875717634051" type="System">
-                    <param id="0" name="Variable">KettleIsBoiled</param>
-                    <param id="1" name="Value">1</param>
+                <action id="6" name="Play" sid="453833978781428" type="youtube" />
+                <action id="-15" name="Set visible" sid="346771265637949" type="InventoryTeabag">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="367646545852868" type="System">
+                    <param id="0" name="Variable">SetVideoAtAfterPause</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>

@@ -139,6 +139,27 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TeaCupboardMask" sid="925557421623972">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="270173986128013" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InventoryTeabag" sid="797945938969316">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="962529672413782">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301041423504001" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
