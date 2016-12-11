@@ -147,7 +147,7 @@
                 <instance type="MousePos" uid="5">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -190,7 +190,7 @@
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.5</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="MoveLeft" uid="7">
@@ -242,7 +242,7 @@
                         <text></text>
                         <placeholder></placeholder>
                         <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <enabled>Yes</enabled>
                         <read-only>No</read-only>
                         <spell-check>No</spell-check>
@@ -268,7 +268,7 @@
                         <type>Button</type>
                         <text>OK</text>
                         <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <enabled>Yes</enabled>
                         <auto-font-size>Yes</auto-font-size>
                         <id-optional></id-optional>
@@ -306,7 +306,7 @@
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.5</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="CupCupboard" uid="17">
@@ -328,7 +328,7 @@
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.5</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="CupOnTable" uid="19">
@@ -350,7 +350,7 @@
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.5</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="SpoonCupboard" uid="22">
@@ -364,15 +364,15 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>37</x>
-                        <y>314.333343506</y>
+                        <y>331.666656494</y>
                         <z>0</z>
                         <width>111</width>
-                        <height>79</height>
+                        <height>118</height>
                         <depth>0</depth>
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.5</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="SpoonInventory" uid="23">
@@ -403,6 +403,72 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BowlCupboard" uid="27">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>69</x>
+                        <y>67</y>
+                        <z>0</z>
+                        <width>97</width>
+                        <height>161</height>
+                        <depth>0</depth>
+                        <hotspotX>0.333333343</hotspotX>
+                        <hotspotY>0.444444448</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="TimsCupboard" uid="28">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>181.333343506</x>
+                        <y>69.666664124</y>
+                        <z>0</z>
+                        <width>127</width>
+                        <height>168</height>
+                        <depth>0</depth>
+                        <hotspotX>0.333333343</hotspotX>
+                        <hotspotY>0.444444448</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="MyCupboard" uid="29">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>445.666625977</x>
+                        <y>418.333374023</y>
+                        <z>0</z>
+                        <width>131</width>
+                        <height>93</height>
+                        <depth>0</depth>
+                        <hotspotX>0.333333343</hotspotX>
+                        <hotspotY>0.444444448</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
             </instances>
@@ -507,7 +573,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="InventoryCup" uid="18">
+                <instance type="CupTea" uid="18">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -548,7 +614,7 @@
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.5</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="InventoryMilk" uid="21">
@@ -603,6 +669,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Freezer" uid="30">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>608.333374023</x>
+                        <y>419.333343506</y>
+                        <z>0</z>
+                        <width>193</width>
+                        <height>111</height>
+                        <depth>0</depth>
+                        <hotspotX>0.333333343</hotspotX>
+                        <hotspotY>0.444444448</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -641,7 +729,7 @@
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.5</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
             </instances>
@@ -689,7 +777,7 @@
                     <properties>
                         <text>How to make a proper cup o tea:</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

@@ -22,6 +22,8 @@
     <used-behaviors>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -33,14 +35,15 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <use-loader-layout>0</use-loader-layout>
+    <first-layout>Loading</first-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Progress bar only</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -192,7 +195,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="InventoryCup" sid="236880007121676">
+        <object-type name="CupTea" sid="236880007121676">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="689419050326497" speed="5">
@@ -269,13 +272,94 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BowlCupboard" sid="528769172829272">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800024462655806" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimsCupboard" sid="228900317225834">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389981164586126" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MyCupboard" sid="612008134682841">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187992526290858" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Freezer" sid="904482910691690">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172159340482350" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="YoutubePlayer" sid="368664777602031">
+            <plugin id="rex_youtube_player" />
+        </object-type>
+        <object-type name="WinTea" sid="866566195002350">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="673267950389845">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="989038239689891">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507784479636917" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="767810268103977">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TweetIt" sid="973982287208479">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="513192045115877">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="StartButton" sid="341105843757060">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="JustTea" sid="308539564288118">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="803617823203495" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MyTwitter" sid="442544123990323">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="RestartButton" sid="635738624442938">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Completed.xml</layout>
+        <layout>Loading.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Completed.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />

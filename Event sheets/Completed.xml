@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Completed</name>
+    <events>
+        <event-block sid="564940394452516">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="518113127263383" type="System">
+                    <param id="0" name="Interval (seconds)">0.3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="239094706238258" type="System">
+                    <param id="0" name="Object to create">WinTea</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(0,LayoutWidth)</param>
+                    <param id="3" name="Y">LayoutHeight</param>
+                </action>
+                <action behavior="Physics" id="0" name="Apply force" sid="877473998520992" type="WinTea">
+                    <param id="0" name="Force X">0</param>
+                    <param id="1" name="Force Y">-2000</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="531675851855961">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="406839011970589" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TweetIt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="434570979735954" type="Browser">
+                    <param id="0" name="URL">&quot;http://twitter.com/home?status=I just made a lovely cuppa in The Tea Room  by @jimmynoshoes&quot;</param>
+                    <param id="1" name="Tag">&quot;tweetit&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="552195994097389">
+            <conditions>
+                <condition id="0" name="On clicked" sid="167524793880154" type="RestartButton" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="486788023236055" type="System" />
+                <action id="-2" name="Go to layout" sid="381490958691272" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -38,7 +38,7 @@
                     <param id="0" name="Javascript">&quot;$(&apos;body&apos;).css(&apos;-webkit-user-select&apos;,&apos;none&apos;)&#x0D;&#x0A;     .css(&apos;-moz-user-select&apos;,&apos;-moz-none&apos;)&#x0D;&#x0A;      .css(&apos;-ms-user-select&apos;,&apos;none&apos;)&#x0D;&#x0A;          .css(&apos;user-select&apos;,&apos;none&apos;);&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="480595475411463" type="NoteText">
-                    <param id="0" name="Text">&quot;How to make a proper cup o tea:&#x0D;&#x0A;&#x0D;&#x0A;You will need&#x0D;&#x0A;* Kettle&#x0D;&#x0A;* Mug&#x0D;&#x0A;* Teaspoon&#x0D;&#x0A;* Teabag&#x0D;&#x0A;* Milk&#x0D;&#x0A;&#x0D;&#x0A;1. Pick up kettle&#x0D;&#x0A;2. Turn on tap&#x0D;&#x0A;3. Fill kettle&#x0D;&#x0A;4. Put kettle back&#x0D;&#x0A;5. Turn on kettle&#x0D;&#x0A;6. Put teabag in mug&#x0D;&#x0A;7. Put boiled water in mug&#x0D;&#x0A;8. Remove teabag with spoon&#x0D;&#x0A;9. Add milk&#x0D;&#x0A;10. Enjoy!&quot;</param>
+                    <param id="0" name="Text">&quot;How to make a proper cup o tea:&#x0D;&#x0A;&#x0D;&#x0A;You will need:&#x0D;&#x0A;Kettle, Mug, Teaspoon, Teabag, Milk&#x0D;&#x0A;&#x0D;&#x0A;1. Pick up kettle&#x0D;&#x0A;2. Turn on tap&#x0D;&#x0A;3. Fill kettle&#x0D;&#x0A;4. Put kettle back&#x0D;&#x0A;5. Turn on kettle&#x0D;&#x0A;6. Put teabag in mug&#x0D;&#x0A;7. Put boiled water in mug&#x0D;&#x0A;8. Remove teabag with spoon&#x0D;&#x0A;9. Add milk&#x0D;&#x0A;10. Enjoy!&#x0D;&#x0A;&#x0D;&#x0A;Click on cupboards to find items. Drag items from your inventory to combine.&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -1024,6 +1024,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="374142845436027" type="System">
+                            <param id="0" name="Variable">IsFacingSink</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="1" name="Set playback time" sid="398043262803550" type="youtube">
@@ -1089,6 +1094,12 @@
                     <param id="0" name="Name">&quot;SetRestingPosition&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
+                <action id="-16" name="Wait" sid="300055659913340" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="333046508135540" type="System">
+                    <param id="0" name="Layout">Completed</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="858469746752294">
@@ -1128,6 +1139,118 @@
                 </action>
                 <action id="-15" name="Set visible" sid="231867929700711" type="NoteInventory">
                     <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="908603505030989">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="997489066319730" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BowlCupboard</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="554142439716336" type="System">
+                    <param id="0" name="Variable">IsFacingSink</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set playback time" sid="274257328658290" type="youtube">
+                    <param id="0" name="Time">7*60+37</param>
+                </action>
+                <action id="-9" name="Set value" sid="169882525424778" type="System">
+                    <param id="0" name="Variable">PauseVideoAt</param>
+                    <param id="1" name="Value">7*60+45</param>
+                </action>
+                <action id="6" name="Play" sid="154574901316071" type="youtube" />
+                <action id="0" name="Call function" sid="243965836767578" type="Function">
+                    <param id="0" name="Name">&quot;SetRestingPosition&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="293627928661998">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="914214749266708" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TimsCupboard</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="257136973519432" type="System">
+                    <param id="0" name="Variable">IsFacingSink</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set playback time" sid="477027725922056" type="youtube">
+                    <param id="0" name="Time">7*60+23</param>
+                </action>
+                <action id="-9" name="Set value" sid="964353906190278" type="System">
+                    <param id="0" name="Variable">PauseVideoAt</param>
+                    <param id="1" name="Value">7*60+34</param>
+                </action>
+                <action id="6" name="Play" sid="171060541652815" type="youtube" />
+                <action id="0" name="Call function" sid="383086795596989" type="Function">
+                    <param id="0" name="Name">&quot;SetRestingPosition&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="919797805297076">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="371039020310571" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">MyCupboard</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="613163615248474" type="System">
+                    <param id="0" name="Variable">IsFacingSink</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set playback time" sid="140172103857946" type="youtube">
+                    <param id="0" name="Time">7*60+48</param>
+                </action>
+                <action id="-9" name="Set value" sid="172349966475248" type="System">
+                    <param id="0" name="Variable">PauseVideoAt</param>
+                    <param id="1" name="Value">7*60+56</param>
+                </action>
+                <action id="6" name="Play" sid="347540947225422" type="youtube" />
+                <action id="0" name="Call function" sid="738862968348364" type="Function">
+                    <param id="0" name="Name">&quot;SetRestingPosition&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="827307297892563">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="288825975975471" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Freezer</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="779231346080082" type="System">
+                    <param id="0" name="Variable">IsFacingSink</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set playback time" sid="159064850177450" type="youtube">
+                    <param id="0" name="Time">7*60+57</param>
+                </action>
+                <action id="-9" name="Set value" sid="204098730633897" type="System">
+                    <param id="0" name="Variable">PauseVideoAt</param>
+                    <param id="1" name="Value">8*60+4</param>
+                </action>
+                <action id="6" name="Play" sid="868166628432933" type="youtube" />
+                <action id="0" name="Call function" sid="692047765680301" type="Function">
+                    <param id="0" name="Name">&quot;SetRestingPosition&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
