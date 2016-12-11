@@ -14,8 +14,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout active="1" order="2">Completed</layout>
         <layout order="4">Loading</layout>
         <event-sheet order="1">Event sheet 1</event-sheet>
-        <event-sheet order="3">Completed</event-sheet>
-        <event-sheet order="5">Event sheet 3</event-sheet>
+        <event-sheet order="3">CompletedEvents</event-sheet>
+        <event-sheet order="5">LoadingEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -58,5 +58,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Freezer/" />
         <folder expanded="1" path="animation-folder/WinTea/" />
         <folder expanded="1" path="animation-folder/JustTea/" />
+        <folder expanded="1" path="animation-folder/Twitter_Logo_Blue/" />
     </folders-expanded>
 </c2uistate>

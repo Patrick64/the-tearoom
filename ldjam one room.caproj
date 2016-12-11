@@ -349,6 +349,34 @@
         <object-type name="RestartButton" sid="635738624442938">
             <plugin id="Button" />
         </object-type>
+        <object-type name="TweetBox" sid="783994521487220">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Twitter_Logo_Blue" sid="540703494843137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="786183058412799" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pmwoo\Downloads\Twitter_Logo_Blue\Twitter_Logo_Blue\Twitter_Logo_Blue.png">
+                        <collision-poly>
+                            <point x="0.3775" y="0.3775" />
+                            <point x="0.5" y="0.325" />
+                            <point x="0.715" y="0.285" />
+                            <point x="0.73" y="0.5" />
+                            <point x="0.645" y="0.645" />
+                            <point x="0.5" y="0.7375" />
+                            <point x="0.265" y="0.735" />
+                            <point x="0.235" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TweetThis" sid="540282135452572">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Text3" sid="412850928831172">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -358,8 +386,8 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Completed.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>CompletedEvents.xml</event-sheet>
+        <event-sheet>LoadingEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />

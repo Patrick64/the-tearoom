@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Completed</name>
+    <name>CompletedEvents</name>
     <events>
         <event-block sid="564940394452516">
             <conditions>
@@ -25,15 +25,11 @@
         </event-block>
         <event-block sid="531675851855961">
             <conditions>
-                <condition id="6" name="On object clicked" sid="406839011970589" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">TweetIt</param>
-                </condition>
+                <condition id="0" name="On clicked" sid="406839011970589" type="TweetThis" />
             </conditions>
             <actions>
                 <action id="8" name="Open URL in new window" sid="434570979735954" type="Browser">
-                    <param id="0" name="URL">&quot;http://twitter.com/home?status=I just made a lovely cuppa in The Tea Room  by @jimmynoshoes&quot;</param>
+                    <param id="0" name="URL">&quot;http://twitter.com/home?status=&quot; &amp; TweetBox.Text &amp; &quot; &quot; &amp; &quot;https://patrick64.github.io/the-tearoom/&quot;</param>
                     <param id="1" name="Tag">&quot;tweetit&quot;</param>
                 </action>
             </actions>
@@ -43,9 +39,30 @@
                 <condition id="0" name="On clicked" sid="167524793880154" type="RestartButton" />
             </conditions>
             <actions>
-                <action id="-21" name="Reset global variables" sid="486788023236055" type="System" />
-                <action id="-2" name="Go to layout" sid="381490958691272" type="System">
-                    <param id="0" name="Layout">Layout 1</param>
+                <action id="9" name="Reload" sid="332700212537065" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="384666890928560">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="380592444724363" type="Mouse">
+                    <param id="0" name="Object">TweetIt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="515263780585200" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="288568010277475">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="129721826069442" type="Mouse">
+                    <param id="0" name="Object">TweetIt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="938619054199306" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
                 </action>
             </actions>
         </event-block>

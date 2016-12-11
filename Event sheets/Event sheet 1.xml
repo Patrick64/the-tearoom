@@ -38,7 +38,10 @@
                     <param id="0" name="Javascript">&quot;$(&apos;body&apos;).css(&apos;-webkit-user-select&apos;,&apos;none&apos;)&#x0D;&#x0A;     .css(&apos;-moz-user-select&apos;,&apos;-moz-none&apos;)&#x0D;&#x0A;      .css(&apos;-ms-user-select&apos;,&apos;none&apos;)&#x0D;&#x0A;          .css(&apos;user-select&apos;,&apos;none&apos;);&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="480595475411463" type="NoteText">
-                    <param id="0" name="Text">&quot;How to make a proper cup o tea:&#x0D;&#x0A;&#x0D;&#x0A;You will need:&#x0D;&#x0A;Kettle, Mug, Teaspoon, Teabag, Milk&#x0D;&#x0A;&#x0D;&#x0A;1. Pick up kettle&#x0D;&#x0A;2. Turn on tap&#x0D;&#x0A;3. Fill kettle&#x0D;&#x0A;4. Put kettle back&#x0D;&#x0A;5. Turn on kettle&#x0D;&#x0A;6. Put teabag in mug&#x0D;&#x0A;7. Put boiled water in mug&#x0D;&#x0A;8. Remove teabag with spoon&#x0D;&#x0A;9. Add milk&#x0D;&#x0A;10. Enjoy!&#x0D;&#x0A;&#x0D;&#x0A;Click on cupboards to find items. Drag items from your inventory to combine.&quot;</param>
+                    <param id="0" name="Text">&quot;How to make a proper cup o tea:&#x0D;&#x0A;&#x0D;&#x0A;You will need:&#x0D;&#x0A;Kettle, Mug, Teaspoon, Teabag, Milk&#x0D;&#x0A;&#x0D;&#x0A;1. Pick up kettle&#x0D;&#x0A;2. Turn on tap&#x0D;&#x0A;3. Fill kettle&#x0D;&#x0A;4. Put kettle back&#x0D;&#x0A;5. Turn on kettle&#x0D;&#x0A;6. Put teabag in mug&#x0D;&#x0A;7. Put boiled water in mug&#x0D;&#x0A;8. Remove teabag with spoon&#x0D;&#x0A;9. Add milk&#x0D;&#x0A;10. Enjoy!&#x0D;&#x0A;&#x0D;&#x0A;Click on cupboards to find items.&#x0D;&#x0A;Drag items from your inventory to combine.&#x0D;&#x0A;&#x0D;&#x0A;[ close hints ]&quot;</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="521668908422946" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
                 </action>
             </actions>
         </event-block>
@@ -108,7 +111,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="337090521822694">
+                        <event-block disabled="1" sid="337090521822694">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="239611128976841" type="System">
                                     <param id="0" name="Variable">HasKettle</param>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 3</name>
+    <name>LoadingEvents</name>
     <events>
         <event-block sid="183295294281043">
             <conditions>
@@ -38,6 +38,30 @@
                 <action id="8" name="Open URL in new window" sid="718574045246391" type="Browser">
                     <param id="0" name="URL">&quot;https://twitter.com/JimmyNoShoes&quot;</param>
                     <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="609352107497023">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="502681953869822" type="Mouse">
+                    <param id="0" name="Object">MyTwitter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="156460204795939" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="970938317870474">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="133875512779404" type="Mouse">
+                    <param id="0" name="Object">MyTwitter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="187671001827439" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
                 </action>
             </actions>
         </event-block>

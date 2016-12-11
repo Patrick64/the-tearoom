@@ -777,7 +777,7 @@
                     <properties>
                         <text>How to make a proper cup o tea:</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-16,400,0</font>
+                        <font>Arial,-14.4,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -788,11 +788,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>263</x>
-                        <y>41</y>
+                        <x>261</x>
+                        <y>58</y>
                         <z>0</z>
-                        <width>273</width>
-                        <height>404</height>
+                        <width>302</width>
+                        <height>419</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
