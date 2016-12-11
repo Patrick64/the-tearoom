@@ -66,5 +66,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="775959766306993">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="128741396738928" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Cancel fullscreen" sid="822706842581342" type="Browser" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
