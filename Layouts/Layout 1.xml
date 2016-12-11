@@ -31,7 +31,7 @@
             <instances>
                 <instance type="youtube" uid="0">
                     <properties>
-                        <video-id>BDfLVFSO5bc</video-id>
+                        <video-id>uihCQ1Jrg_E</video-id>
                         <autoplay>Yes</autoplay>
                         <looping>No</looping>
                         <control-bar>No</control-bar>
@@ -98,7 +98,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="eventLayer" sid="321418668503105">
+        <layer name="workSurface" sid="321418668503105">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -181,16 +181,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>711.057617188</x>
-                        <y>336.933868408</y>
+                        <x>453</x>
+                        <y>293.555480957</y>
                         <z>0</z>
-                        <width>209</width>
-                        <height>257</height>
+                        <width>120</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="MoveLeft" uid="7">
@@ -237,7 +237,57 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Tap" uid="9">
+                <instance type="VideoPosition" uid="14">
+                    <properties>
+                        <text></text>
+                        <placeholder></placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7</x>
+                        <y>27</y>
+                        <z>0</z>
+                        <width>150</width>
+                        <height>22</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="updateVideoPosition" uid="15">
+                    <properties>
+                        <type>Button</type>
+                        <text>OK</text>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6</x>
+                        <y>53</y>
+                        <z>0</z>
+                        <width>72</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="TeaCupboard" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -247,16 +297,60 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>429.666717529</x>
-                        <y>173.555541992</y>
+                        <x>472</x>
+                        <y>75.666671753</y>
                         <z>0</z>
-                        <width>367</width>
-                        <height>193</height>
+                        <width>88</width>
+                        <height>164</height>
                         <depth>0</depth>
                         <hotspotX>0.333333343</hotspotX>
                         <hotspotY>0.444444448</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>0.5</opacity>
+                    </world>
+                </instance>
+                <instance type="CupCupboard" uid="17">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>353</x>
+                        <y>73.777778625</y>
+                        <z>0</z>
+                        <width>131</width>
+                        <height>164</height>
+                        <depth>0</depth>
+                        <hotspotX>0.333333343</hotspotX>
+                        <hotspotY>0.444444448</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.5</opacity>
+                    </world>
+                </instance>
+                <instance type="InventoryCup" uid="18">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>172</x>
+                        <y>444</y>
+                        <z>0</z>
+                        <width>44</width>
+                        <height>59</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
@@ -358,6 +452,47 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="kitchensink" sid="704259970249767">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Tap" uid="9">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>345.333312988</x>
+                        <y>204.111099243</y>
+                        <z>0</z>
+                        <width>194</width>
+                        <height>111</height>
+                        <depth>0</depth>
+                        <hotspotX>0.333333343</hotspotX>
+                        <hotspotY>0.444444448</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>

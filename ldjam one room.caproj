@@ -11,9 +11,12 @@
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Rex.Rainbow" id="rex_youtube_player" version="0.100000001">Youtube player</plugin>
     </used-plugins>
     <used-behaviors>
@@ -160,6 +163,39 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Function" sid="673244440829907">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="VideoPosition" sid="411412190715352">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="updateVideoPosition" sid="101185497837538">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TeaCupboard" sid="701292683015044">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="399742071667649" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CupCupboard" sid="961310290932039">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760613099315728" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.444444" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InventoryCup" sid="236880007121676">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="689419050326497" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -171,6 +207,7 @@
     <global-instances>
         <global-instance type="Mouse" uid="2" />
         <global-instance type="Browser" uid="3" />
+        <global-instance type="Function" uid="13" />
     </global-instances>
     <sounds-folder />
     <music-folder />
